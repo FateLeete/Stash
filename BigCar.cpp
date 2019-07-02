@@ -5,48 +5,32 @@ using namespace std;
 
 bool prime(int);
 
-const int bigCar = 16384;
+void printFoo();
+
+void fullCar();
+
+const int bigCar = 262144;
+
+char foo[bigCar];
 
 int main()
 	{
     cout << "Continue ? ";      
     cin.get();
-    
-    char foo[bigCar];
-    foo[0]= '1';
-    foo[1]= '1';
-    foo[2]= '1';
-    foo[3]= '1';
-       
-    for(int i= 4; i < bigCar; i++)
-            {
-            bool b = prime(i);      
-                       
-            if (b)     
-               {
-               foo[i] = '1';
-               }
-             else if(1)
-               {
-               foo[i] = '0';
-               }
-             }             
-    
-     for(int i= 0; i < bigCar; i++)
-             {
-             cout << foo[i];
-             }             
-     for(int i= 0; i < 8; i++)
-             {
-             cout << "\n********************************************************************************";
-             }
+     
+    fullCar();
              
-    int ddd = sizeof(foo);
-  
+    printFoo();
+       
+    for(int i= 0; i < 8; i++)
+            {
+            cout << "\n********************************************************************************";
+            }
+            
     cout << endl << endl;
     cout << "\n****************************************\n";
   
-    cout << "Size of foo : " << ddd;
+    cout << "Size of foo : " << sizeof(foo);
   
     cout << "\n****************************************";
     
@@ -70,3 +54,35 @@ bool prime(int c)
 			}
          }
      }        
+
+void printFoo()
+     {
+     for(int i= 0; i < bigCar; i++)
+             {
+             cout << foo[i];
+             }        
+     }          
+     
+void fullCar()
+     {
+     
+    foo[0]= '1';
+    foo[1]= '1';
+    foo[2]= '1';
+    foo[3]= '1';
+    
+                                                            
+    for(int i= 4; i < bigCar; i++)
+            {
+            bool b = prime(i);      
+                       
+            if (b)     
+               {
+               foo[i] = '1';
+               }
+             else if(1)
+               {
+               foo[i] = '0';
+               }
+             }             
+      }
