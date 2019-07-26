@@ -68,32 +68,32 @@ int main()
     cin.ignore();
     
     cin.get();
-              
-	return 0;
-	}
+
+    return 0;
+    }
 
 bool prime(int c)
      {
      for (int i = 2; i < c; i++)
          {
          if (c % i == 0)
-		 	{
-			return false;
-   			}
+ 	 	{
+		return false;
+	 	}
          if (i > (c / 2) + 1)
-			{
-			return true;
-			}
+		{
+		return true;
+		}
          }
      }        
 
 void printFoo()
      {
-     int cmp= 1;
-     int stpcmp= 1;
-     int barcmp= 0;
+     int cmp = 1;
+     int stpcmp = 1;
+     int barcmp = 0;
      
-     for (int i= 0; i < bigCar; i++)
+     for (int i = 0; i < bigCar; i++)
              {
              cout << foo[i];
              bar[i] = foo[i];
@@ -103,7 +103,7 @@ void printFoo()
                 if (barcmp == 16 && i % 16 == 0)
                     {
                     ano(i-1);  
-                    barcmp= 0;
+                    barcmp = 0;
                     }
                  else
                     {
@@ -112,17 +112,17 @@ void printFoo()
                 }
              else
                 {
-                barcmp= 0;
+                barcmp = 0;
                 }              
              
              if (cmp == 16)
                     {
                     cout << "   " << i << endl;
-                    cmp= 0;
+                    cmp = 0;
                     if (stpcmp == 16)
                        {
                        cout << endl;
-                       stpcmp= 0;
+                       stpcmp = 0;
                        }
                 
                     stpcmp++;
@@ -134,12 +134,12 @@ void printFoo()
                  
 void fillCar()
     {
-    foo[0]= '1';
-    foo[1]= '1';
-    foo[2]= '1';
-    foo[3]= '1';
+    foo[0] = '1';
+    foo[1] = '1';
+    foo[2] = '1';
+    foo[3] = '1';
                                                 
-    for (int i= 4; i < bigCar; i++)
+    for (int i = 4; i < bigCar; i++)
             {
             if (i % 2048 == 0)
                {
@@ -163,27 +163,27 @@ void ano(int i)
      {
      for (int j = 0; j <= 15; j++)
          {       
-         bar[i-j]= '>';
+         bar[i-j] = '>';
          }
      }    
           
 void printBar()
      {
-     int cmp= 1;
-     int stpcmp= 1;
+     int cmp = 1;
+     int stpcmp = 1;
          
-     for (int i= 0; i < bigCar; i++)
+     for (int i = 0; i < bigCar; i++)
             {
              cout << bar[i];
                       
              if (cmp == 16)
                 {
                 cout << "   " << i << endl;
-                cmp= 0;
+                cmp = 0;
                 if (stpcmp == 16)
                    {
                    cout << endl;
-                   stpcmp= 0;
+                   stpcmp = 0;
                    }
                 
                 stpcmp++;
@@ -218,8 +218,8 @@ void printBar2()
      {     
      int cmt = 0;
      int cmt2 = 0;
-     int m= 1;
-     int n= 0;
+     int m = 1;
+     int n = 0;
        
      for (int i = 0; i < iti / 2; i++)
          { 
@@ -281,7 +281,7 @@ void printBar2()
       
 void szof(bool isFoo)
      {
-     for (int i= 0; i < 8; i++)
+     for (int i = 0; i < 8; i++)
              {
              cout << "\n****************************************";
              } 
@@ -300,4 +300,4 @@ void szof(bool isFoo)
        }      
        
      cout << "\n****************************************";
-     }                               
+     }
