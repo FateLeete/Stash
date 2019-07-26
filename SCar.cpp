@@ -82,7 +82,7 @@ bool prime(int c)
 		 	{
 			return false;
    			}
-         if (i > (c / 2) + 1 )
+         if (i > (c / 2) + 1)
 			{
 			return true;
 			}
@@ -103,7 +103,7 @@ void printFoo()
              
              if (foo[i] == '0')
                 {                        
-                if (barcmp == 16 && i%16 == 0)
+                if (barcmp == 16 && i % 16 == 0)
                     {
                     ano(i-1);  
                     barcmp= 0;
@@ -205,15 +205,14 @@ void convBar2()
          {
          for (int j = 0; j < 256 ; j++)
              {  
-             bar2[0][j + ( i * 512 )] = bar[j + (i * 512)];
-             bar2[1][j + ( i * 512 )] = '7';
+             bar2[0][j + (i * 512)] = bar[j + (i * 512)];
+             bar2[1][j + (i * 512)] = '7';
              }
-             
-           
+                        
          for (int k = 0; k < 256; k++)
              {    
-             bar2[1][k + ( z * 256 )] = bar[k + (z * 256)];
-             bar2[0][k + ( z * 256 )] = '8';
+             bar2[1][k + (z * 256)] = bar[k + (z * 256)];
+             bar2[0][k + (z * 256)] = '8';
              }
           z = z + 2;   
           }
@@ -241,12 +240,12 @@ void printBar2()
                     }                        
                  if (k != 15)
                     {  
-                    cout << bar2[0][cmt + ( 256 * (i + n)) ];
+                    cout << bar2[0][cmt + (256 * (i + n))];
                     cmt++;
                     }
                  else
                      {
-                     cout << bar2[0][cmt + ( 256 * (i + n)) ];      
+                     cout << bar2[0][cmt + (256 * (i + n))];      
                      cmt++;
                      }
                  }
@@ -259,12 +258,12 @@ void printBar2()
                     }
                  if (l != 15)
                     {
-                    cout << bar2[1][cmt2 + ( 256 * m)];
+                    cout << bar2[1][cmt2 + (256 * m)];
                     cmt2++;
                     }
                  else
                      {
-                     cout << bar2[1][cmt2 + ( 256 * m)];
+                     cout << bar2[1][cmt2 + (256 * m)];
                      cmt2++;
                      }                
                  }
