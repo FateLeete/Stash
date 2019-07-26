@@ -96,7 +96,7 @@ void printFoo()
      int barcmp= 0;
      bool flLine= false;
      
-     for(int i= 0; i < bigCar; i++)
+     for (int i= 0; i < bigCar; i++)
              {
              cout << foo[i];
              bar[i] = foo[i];
@@ -142,7 +142,7 @@ void fillCar()
     foo[2]= '1';
     foo[3]= '1';
                                                 
-    for(int i= 4; i < bigCar; i++)
+    for (int i= 4; i < bigCar; i++)
             {
             if (i % 2048 == 0)
                {
@@ -175,7 +175,7 @@ void printBar()
      int cmp= 1;
      int stpcmp= 1;
          
-     for(int i= 0; i < bigCar; i++)
+     for (int i= 0; i < bigCar; i++)
             {
              cout << bar[i];
                       
@@ -284,7 +284,7 @@ void printBar2()
       
 void szof(bool isFoo)
      {
-     for(int i= 0; i < 8; i++)
+     for (int i= 0; i < 8; i++)
              {
              cout << "\n****************************************";
              } 
