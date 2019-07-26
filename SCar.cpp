@@ -31,7 +31,7 @@ char bar2[2][bigCar];
 
 
 int main()
-	{
+    {
     cout << "Continue ? ";      
     cin.get();
      
@@ -71,21 +71,21 @@ int main()
     
     cin.get();
               
-	return 0;
-	}
+    return 0;
+    }
 
 bool prime(int c)
      {
      for (int i = 2; i < c; i++)
          {
          if (c % i == 0)
-		 	{
-			return false;
-   			}
+		{
+		return false;
+   		}
          if (i > (c / 2) + 1)
-			{
-			return true;
-			}
+		{
+		return true;
+		}
          }
      }        
 
