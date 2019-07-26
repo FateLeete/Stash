@@ -141,8 +141,7 @@ void fillCar()
     foo[1]= '1';
     foo[2]= '1';
     foo[3]= '1';
-    
-                                                            
+                                                
     for(int i= 4; i < bigCar; i++)
             {
             if (i % 2048 == 0)
