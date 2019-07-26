@@ -19,8 +19,6 @@ void convBar2();
 
 void printBar2();
 
-void szfb();
-
 const int bigCar = 262144;
 
 const int iti = bigCar / 256; 
@@ -94,7 +92,6 @@ void printFoo()
      int cmp= 1;
      int stpcmp= 1;
      int barcmp= 0;
-     bool flLine= false;
      
      for (int i= 0; i < bigCar; i++)
              {
@@ -277,7 +274,7 @@ void printBar2()
                              
          cout << endl ;
          ++n;
-         m = m+2;
+         m = m + 2;
          }
      }
  
