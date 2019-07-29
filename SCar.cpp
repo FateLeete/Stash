@@ -30,7 +30,8 @@ char bar2[2][bigCar];
 
 int main()
     {
-    cout << "Continue ? ";      
+    cout << "Continue ? ";     
+     
     cin.get();
      
     cout << endl << "Please wait, computing !"; 
@@ -77,13 +78,13 @@ bool prime(int c)
      for (int i = 2; i < c; i++)
          {
          if (c % i == 0)
- 	 	{
-		return false;
-	 	}
+ 	 	    {
+		    return false;
+	 	    }
          if (i > (c / 2) + 1)
-		{
-		return true;
-		}
+		    {
+		    return true;
+		    }
          }
      }        
 
@@ -91,7 +92,9 @@ void printFoo()
      {
      int cmp = 1;
      int stpcmp = 1;
-     int barcmp = 0;
+     int barcmp = 1;
+     
+     cout << "\n\n";
      
      for (int i = 0; i < bigCar; i++)
              {
@@ -103,7 +106,7 @@ void printFoo()
                 if (barcmp == 16 && i % 16 == 0)
                     {
                     ano(i-1);  
-                    barcmp = 0;
+                    barcmp = 1;
                     }
                  else
                     {
@@ -119,6 +122,7 @@ void printFoo()
                     {
                     cout << "   " << i << endl;
                     cmp = 0;
+                    
                     if (stpcmp == 16)
                        {
                        cout << endl;
@@ -171,6 +175,8 @@ void printBar()
      {
      int cmp = 1;
      int stpcmp = 1;
+     
+     cout << "\n\n";
          
      for (int i = 0; i < bigCar; i++)
             {
@@ -180,6 +186,7 @@ void printBar()
                 {
                 cout << "   " << i << endl;
                 cmp = 0;
+
                 if (stpcmp == 16)
                    {
                    cout << endl;
@@ -210,6 +217,7 @@ void convBar2()
              bar2[1][k + (z * 256)] = bar[k + (z * 256)];
              bar2[0][k + (z * 256)] = '8';
              }
+
           z = z + 2;   
           }
      }
@@ -220,6 +228,8 @@ void printBar2()
      int cmt2 = 0;
      int m = 1;
      int n = 0;
+     
+     cout << "\n\n";
        
      for (int i = 0; i < iti / 2; i++)
          { 
