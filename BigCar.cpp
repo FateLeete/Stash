@@ -1,7 +1,6 @@
 
 #include <iostream>
 
-
 using namespace std;
 
 
@@ -95,7 +94,6 @@ void printFoo()
 	int cmp = 1;
 	int stpcmp = 1;
 	int barcmp = 0;
-	int cmpz = 0;
 
 	cout << "\n\n";
 
