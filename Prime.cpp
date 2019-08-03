@@ -4,19 +4,18 @@ using namespace std;
 
 int main()
 	{
-	long long dNum = 4;
-	long long dCmp = 4;
+	long long dNum = 4LL;
+	long long dCmp = 4LL;
 
 	cout << ' ' << '1' << ' ' << '1' << endl;
 	cout << ' ' << '2' << ' ' << '2' << endl;
 	cout << ' ' << '3' << ' ' << '3' << endl;
-
 	
 	for (;;)
 		{
-		for (long long i = 2; i < dNum; i++)
+		for (long long i = 2LL; i < dNum; i++)
 			{
-			if (dNum == 38)
+            if (dNum == 38)
 				{
 				cin.get();
 				break;
@@ -25,7 +24,7 @@ int main()
 				{
 				break;
 				}
-			if (i > (dNum / 2) + 1 )
+			if (i > (dNum / 2) - 1 )
 				{
 				cout << ' ' << dCmp << ' ' << dNum << endl;
 				dCmp++;
