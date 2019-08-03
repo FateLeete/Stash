@@ -15,7 +15,7 @@ int main()
 		{
 		for (long long i = 2LL; i < dNum; i++)
 			{
-            if (dNum == 38)
+                        if (dNum == 38)
 				{
 				cin.get();
 				break;
