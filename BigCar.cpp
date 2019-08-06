@@ -27,8 +27,6 @@ const int bigCar = 262144;           //  1024 * n
 
 const int iti = bigCar / 256;
 
-const int iti2 = bigCar / 16;
-
 const int iti3 = bigCar / 1024;
 
 char foo[bigCar];
