@@ -20,14 +20,21 @@ void convBar2();
 
 void printBar2();
 
-const int bigCar = 262144;
+void printFoobar();
+
+
+const int bigCar = 262144;           //  1024 * n 
 
 const int iti = bigCar / 256;
+
+const int iti2 = bigCar / 16;
+
+const int iti3 = bigCar / 1024;
 
 char foo[bigCar];
 char bar[bigCar];
 char bar2[2][bigCar];
-
+char foobar[bigCar];
 
 int main()
 {
@@ -69,6 +76,14 @@ int main()
 
 	cin.ignore();
 
+	cout << endl << endl << "Continue to part IV ?";
+
+	cin.get();
+
+	printFoobar();
+
+	cin.ignore();
+
 	cin.get();
 
 	return 0;
@@ -82,7 +97,7 @@ bool prime(int c)
 		{
 			return false;
 		}
-		if (i > (c / 2) + 1)
+		if (i > (c / 2) - 1)
 		{
 			return true;
 		}
@@ -230,6 +245,7 @@ void convBar2()
 	}
 }
 
+
 void printBar2()
 {
 	int cmt = 0;
@@ -296,6 +312,57 @@ void printBar2()
 	}
 }
 
+void printFoobar()
+{
+    cout << endl << endl;
+     
+	for (int l = 0; l < iti3; l++)
+	{
+		for (int i = 0; i < 16; i++)
+		{
+			for (int j = 0; j < 4; j++)
+			{
+				cout << " ";
+
+				if (j == 0)
+				{
+					for (int k = 0; k < 16; k++)
+					{
+						cout << bar[k + (256 * j) + (i * 16) + (1024 * l)];
+					}
+				}
+				if (j == 1)
+				{
+					for (int k = 0; k < 16; k++)
+					{
+						cout << bar[k + (256 * j) + (i * 16) + (1024 * l)];
+					}
+				}
+				if (j == 2)
+				{
+					for (int k = 0; k < 16; k++)
+					{
+						cout << bar[k + (256 * j) + (i * 16) + (1024 * l)];
+					}
+				}
+				if (j == 3)
+				{
+					for (int k = 0; k < 16; k++)
+					{
+						cout << bar[k + (256 * j) + (i * 16) + (1024 * l)];
+					}
+				}
+			}
+
+			if (i != 15)
+				cout << endl;
+			else
+				cout << "  " << (1024 * (l + 1)) - 1;
+		}
+
+		cout << endl << endl;
+	}
+}
 
 void szof(bool isFoo)
 {
