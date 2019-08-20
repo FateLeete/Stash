@@ -320,7 +320,7 @@ void printFoobar()
 		{
 			for (int j = 0; j < 4; j++)
 			{
-		        cout << ((1024 * l) + (i * 16) + (256 * j)) << "\t";
+		                cout << ((1024 * l) + (i * 16) + (256 * j)) << "\t";
 
 				if (j == 0)
 				{
@@ -348,10 +348,10 @@ void printFoobar()
 					for (int k = 0; k < 16; k++)
 					{
 						cout << bar[k + (256 * j) + (i * 16) + (1024 * l)];
-                    }
+                                        }
 				}
 			
-               cout << " " << ((1024 * l) + (i * 16) + (256 * j) + 15) << "\t";		
+                                cout << " " << ((1024 * l) + (i * 16) + (256 * j) + 15) << "\t";		
 			}
 
 			if (i != 15)
@@ -362,7 +362,7 @@ void printFoobar()
 		cout << endl << endl;
 	}
 	
-    cout << "\n\n\n\n\t\t\t\tSize of Foobar : " << sizeof(bar);
+    cout << "\n\n\n\n\t\t\t\t\t\tSize of Foobar : " << sizeof(bar);
 	
 }
 
