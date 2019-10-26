@@ -9,12 +9,13 @@ int master2 = 7;
 int master3 = 11;
 int cmp = 7;
 
-const int n = 262144;
-const int z = 23006;
+const int n = 262144;                                      //1048576;
+int bigCarr = n;
+const int z = 23006;                                             //82030;
 
 const int iti3 = n / 1024;
 
-bool bigCar[n];
+char bigCar[n];
 
 bool tabMu[z];
 int tabMuC[z];
@@ -25,14 +26,15 @@ int o = 1;
 int p = 0;
 int cpMu = 5;
 
+void ano(int);
+void printFoo();
 void printFoobar();
-
 
 int main(int argc, char** argv)
 {
 	for (int j = 0; j < n; j++)
 	{
-		bigCar[j] = false;
+		bigCar[j] = '0';
 	}
 
 	for (int j = 0; j < z; j++)
@@ -49,19 +51,19 @@ int main(int argc, char** argv)
 
 	tempUltraCp[0] = 11;
 
-	bigCar[0] = true;
-	bigCar[1] = true;
-	bigCar[2] = true;
-	bigCar[3] = true;
-	bigCar[4] = false;
-	bigCar[5] = true;
-	bigCar[6] = false;
-	bigCar[7] = true;
-	bigCar[8] = false;
-	bigCar[9] = false;
-	bigCar[10] = false;
-	bigCar[11] = true;
-	bigCar[12] = true;
+	bigCar[0] = '1';
+	bigCar[1] = '1';
+	bigCar[2] = '1';
+	bigCar[3] = '1';
+	bigCar[4] = '0';
+	bigCar[5] = '1';
+	bigCar[6] = '0';
+	bigCar[7] = '1';
+	bigCar[8] = '0';
+	bigCar[9] = '0';
+	bigCar[10] = '0';
+	bigCar[11] = '1';
+	bigCar[12] = '0';
 
 	cout << "\n\n " << "1" << "  \t 1 \n";
 	cout << " " << "2" << "  \t 2 \n";
@@ -100,8 +102,10 @@ int main(int argc, char** argv)
 				{ 
 					if (j == z - 1)
 					{
+						if (cmp % 1000 == 0)
 						cout << " " << cmp << "   \t " << ultra << "\n";
-						bigCar[ultra] = true;
+						
+						bigCar[ultra] = '1';
 						cmp++;
 						tempUltraCp[o] = ultra;
 						++o;
@@ -123,15 +127,76 @@ int main(int argc, char** argv)
 	}
 
 	cout << "\n\n -----------> Continue to part II ? ";
-	cin.ignore();
 	cin.get();
-
+	cout << "\n\n -----------> Please wait ! ";
+	
+    printFoo(); 
+    
 	printFoobar();
 
 	cin.ignore();
 	cin.get();
 
 	return 0;
+}
+
+void ano(int i)
+{
+	for (int j = 1; j <= 16; j++)
+	{
+		bigCar[i - j] = '>';
+	}
+}
+
+void printFoo()
+{
+	int cmp = 1;
+	int stpcmp = 1;
+	int barcmp = 0;
+
+	cout << "\n\n";
+
+	for (int i = 0; i < bigCarr; i++)
+	{
+				
+		if (bigCar[i] == '0')
+		{
+			if (i % 16 == 0)
+			{
+				if (barcmp == 15)
+				{
+					ano(i);
+					barcmp = 0;
+				}
+				else
+				{
+					barcmp = 0;
+				}
+			}
+			else
+			{
+				++barcmp;
+			}
+		}
+		else
+		{
+			barcmp = 0;
+		}
+
+		if (cmp == 16)
+		{
+			cmp = 0;
+
+			if (stpcmp == 16)
+			{
+			stpcmp = 0;
+			}
+
+			stpcmp++;
+		}
+
+		cmp++;
+	}
 }
 
 void printFoobar()
@@ -172,14 +237,16 @@ void printFoobar()
 					for (int k = 0; k < 16; k++)
 					{
 						cout << bigCar[k + (256 * j) + (i * 16) + (1024 * l)];
+						if (k == 15) 
+							cout << "  " << (1024 * l) + (j * 256) + (i * 16) + k;
 					}
 				}
 			}
 
 			if (i != 15)
 				cout << endl;
-			else
-				cout << "  " << (1024 * (l + 1)) - 1;
+		//	else
+				//cout << "  " << (1024 * (l + 1)) - 1;
 		}
 
 		cout << endl << endl;
