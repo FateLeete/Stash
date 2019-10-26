@@ -130,7 +130,7 @@ int main(int argc, char** argv)
 	cin.get();
 	cout << "\n\n -----------> Please wait ! ";
 	
-    printFoo(); 
+	printFoo(); 
     
 	printFoobar();
 
@@ -245,8 +245,7 @@ void printFoobar()
 
 			if (i != 15)
 				cout << endl;
-		//	else
-				//cout << "  " << (1024 * (l + 1)) - 1;
+
 		}
 
 		cout << endl << endl;
