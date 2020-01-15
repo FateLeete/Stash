@@ -20,7 +20,7 @@ int main()
 				{
 				break;
 				}	
-            if ( (double)i > sqrt((double)dNum) )	
+            		if ( (double)i > sqrt((double)dNum) )	
 				{
 				cout << ' ' << dCmp << ' ' << dNum << endl;
 				dCmp++;
@@ -33,4 +33,3 @@ int main()
 
 	return 0;
 	}
-
