@@ -16,7 +16,7 @@ int main()
 				{
 				break;
 				}	
-            if ( (double)i > sqrt((double)dNum) )	
+            		if ( (double)i > sqrt((double)dNum) )	
 				{
 				cout << "\n\n********************\n" << dNum << "\n********************\n\n";
 				break;
@@ -28,4 +28,3 @@ int main()
 
 	return 0;
 	}
-
