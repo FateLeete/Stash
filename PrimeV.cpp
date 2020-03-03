@@ -11,7 +11,7 @@ int main()
 	
 	cout << "Creating tab : ";
 	
-	int* tabMu =  (int*) malloc (2000000000);	
+	unsigned long long* tabMu =  (unsigned long long*) malloc (2000000000);	
 	if (tabMu == NULL) exit (1);	
 	
 	cout << "\nDone!";
@@ -27,10 +27,10 @@ int main()
 
 	cout << "\n\nCalculating Prime table, Please wait !";
 	
-	unsigned long c = 4UL;
-	unsigned long cc = 3UL;
+	unsigned long long c = 4ULL;
+	unsigned long long cc = 3ULL;
 	int pp = 100;
-	unsigned long jjj = 10000UL;
+	unsigned long long jjj = 10000ULL;
 	
 	cout << "\n -*-*- " << "1" << " --> " << "    : 2";
 	cout << "\n -*-*- " << "2" << " --> " << "    : 3";
@@ -78,7 +78,7 @@ int main()
 		
 		for (;;)
 		{
-		for (unsigned long i = 0UL; i < dNum0; i++)
+		for (unsigned long long i = 0ULL; i < dNum0; i++)
 			{
 			if (dNum0 % tabMu[i] == 0)
 				{
