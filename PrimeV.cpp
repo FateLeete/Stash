@@ -7,11 +7,10 @@ using namespace std;
 int main()
 	{
 	unsigned long long dNum0 = 6ULL;
-	
-	
+		
 	cout << "Creating tab : ";
 	
-	unsigned long long* tabMu =  (unsigned long long*) malloc (2000000000);	
+	unsigned long long* tabMu =  (unsigned long long*) malloc (8000000000);	
 	if (tabMu == NULL) exit (1);	
 	
 	cout << "\nDone!";
@@ -29,7 +28,7 @@ int main()
 	
 	unsigned long long c = 4ULL;
 	unsigned long long cc = 3ULL;
-	int pp = 100;
+	unsigned long long pp = 100ULL;
 	unsigned long long jjj = 10000ULL;
 	
 	cout << "\n -*-*- " << "1" << " --> " << "    : 2";
@@ -91,7 +90,7 @@ int main()
 								
 				if ( c == jjj)	
 					{
-					cout << "\n -*" << pp-- << "*- " << c << " --> " << "    : " << dNum0;
+					cout << "\n -*" << pp++ << "*- " << c << " --> " << "    : " << dNum0;
 					jjj += 10000;				
 					}
 				
