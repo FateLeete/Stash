@@ -359,7 +359,7 @@ void printFoobar()
 
 		}
 
-		cout << endl << endl;
+		cout << endl ;
 	}
 	
     cout << "\n\n\n\n\t\t\t\t\t\tSize of Foobar : " << sizeof(bar);
