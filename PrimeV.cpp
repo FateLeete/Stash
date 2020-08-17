@@ -11,11 +11,12 @@ int main()
 	
 	cout << "Creating tab : ";
 	
-	unsigned long long* tabMu =  (unsigned long long*) malloc (8000000000);	
+	unsigned long long* tabMu =  (unsigned long long*) malloc (16000000000ULL);	
+
 	if (tabMu == NULL) exit (1);	
 	
 	cout << "\nDone!";
-	cin.get();
+	//cin.get();
 	
 	cout << "\n\nFilling  tab : ";
 	
@@ -23,7 +24,7 @@ int main()
 	tabMu[1] = 3;
 	tabMu[2] = 5;
 		
-	cout << "\nDone!";
+	//cout << "\nDone!";
 
 	cout << "\n\nCalculating Prime table, Please wait !";
 	
@@ -79,7 +80,9 @@ int main()
 	
 		cout << "\n\nAll Done !!";
 		cout << "\n\nREADY !!!!!\n\nPress ENTER!\n\n";
-		cin.get();
+	//	cin.get();
+		
+		bool alert = false;
 		
 		for (;;)
 		{
@@ -107,12 +110,23 @@ int main()
 				
 				++c;
 				++cc;
+				
+				if (cc > 15999999900 || dNum0 > 18000000000000000000 )
+					alert = true;
+				
 				break;
 				}
 			}
+		
+		if (alert)
+			break;
 			
 		dNum0++;
 		}
 
+	
+	cout << "\n\n\n\n********************************************************\n* That is all ;) \n****************************";
+	cin.get();
+	cin.get();
 	return 0;
 	}
