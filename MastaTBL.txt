@@ -1,5 +1,5 @@
 Creating tab :             // malloc or __int128 or sum shit..       
-Done!
+Done!                  // only test on old P4
 
 Filling  tab : 
 
