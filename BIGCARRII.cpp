@@ -4,11 +4,11 @@ using namespace std;
 
 int main()
     {
-    unsigned long long a, n=0;
+    unsigned long long a, n=0ULL;
 
-    cout << "The magic number is " << n=n-1 << "\n                        ";
+    cout << "The magic number is " << (n=n-1) << "\n                        ";
 
-    return n
+    return n;
 
 } 
     
