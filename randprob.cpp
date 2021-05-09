@@ -53,7 +53,7 @@ for(;;)
     {              
           for (int i = 0 ; i < 100 ; i++)
           {   
-              tbMoy[i] = tbRandRes[i];;             
+              tbMoy[i] = tbRandRes[i];        
               
               if (tbRandRes[i] < lessOcc)
                  {
