@@ -32,7 +32,6 @@ const int iti3 = bigCar / 1024;
 char foo[bigCar];
 char bar[bigCar];
 char bar2[2][bigCar];
-char foobar[bigCar];
 
 int main()
 {
@@ -243,7 +242,6 @@ void convBar2()
 	}
 }
 
-
 void printBar2()
 {
 	int cmt = 0;
@@ -348,10 +346,10 @@ void printFoobar()
 					for (int k = 0; k < 16; k++)
 					{
 						cout << bar[k + (256 * j) + (i * 16) + (1024 * l)];
-                                        }
+                    }
 				}
 			
-                                cout << " " << ((1024 * l) + (i * 16) + (256 * j) + 15) << "\t";		
+                cout << " " << ((1024 * l) + (i * 16) + (256 * j) + 15) << "\t";		
 			}
 
 			if (i != 15)
