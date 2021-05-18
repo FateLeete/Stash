@@ -74,11 +74,6 @@ int main(int argc, char** argv)
 
 	for (;;)
 	{
-		if (cmp == 100)
-		{
-			cin.get();
-		}
-
 		ultra = master2 + master3 - master1;
 
 		if (ultra > n)
@@ -102,15 +97,12 @@ int main(int argc, char** argv)
 				{ 
 					if (j == z - 1)
 					{
-						if (cmp < 1000)
+						if (cmp <= 1000 || cmp == 2000)  
 						cout << " " << cmp << "   \t " << ultra << "\n";
 						if (cmp % 3000 == 0 && cmp < 22000)
 						cout << " " << cmp << "   \t " << ultra << "\n";
-						
 						if (cmp >= 22000)
 						cout << " " << cmp << "   \t " << ultra << "\n";
-						
-						
 						
 						bigCar[ultra] = '1';
 						cmp++;
