@@ -71,14 +71,10 @@ int main(int argc, char** argv)
 	cout << " " << "4" << "  \t 5 \n";
 	cout << " " << "5" << "  \t 7 \n";
 	cout << " " << "6" << "  \t 11 \n";
+	cout << " " << "7" << "  \t 13 \n";
 
 	for (;;)
 	{
-		if (cmp == 100)
-		{
-			cin.get();
-		}
-
 		ultra = master2 + master3 - master1;
 
 		if (ultra > n)
@@ -102,6 +98,9 @@ int main(int argc, char** argv)
 				{ 
 					if (j == z - 1)
 					{
+						if (cmp > 7 && cmp <= 100) 
+						cout <<  " " << cmp << "   \t " << ultra << "\n";
+		
 						if (cmp % 1000 == 0)
 						cout << " " << cmp << "   \t " << ultra << "\n";
 						
@@ -245,7 +244,6 @@ void printFoobar()
 
 			if (i != 15)
 				cout << endl;
-
 		}
 
 		cout << endl << endl;
