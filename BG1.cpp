@@ -24,9 +24,7 @@ int o = 1;
 int p = 0;
 int cpMu = 5;
 
-
 void printFoobar();
-
 
 int main(int argc, char** argv)
 {
@@ -75,11 +73,6 @@ int main(int argc, char** argv)
 
 	for (;;)
 	{
-		if (cmp == 100)
-		{
-			cin.get();
-		}
-
 		ultra = master2 + master3 - master1;
 
 		if (ultra > n)
