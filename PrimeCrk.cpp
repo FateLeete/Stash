@@ -40,7 +40,7 @@ int main()
 	                        if ( (double)i > sqrt((double)dNum) )	
 					{
 					if (!ss)
-					cout << "\n\n****************\n* Prime Number * " << dNum << "\n****************";
+					cout << "\n\n****************\n Prime Number = " << dNum << "\n****************";
 					
                                         j = 1;
 					break;
