@@ -5,14 +5,17 @@ using namespace std;
 
 int main()
 	{
+        bool ss = false; 
+        
+	unsigned long long j = 0ULL, dNum = 0ULL, trS = 0ULL ;
+        trS = trS - 1;
+
 	for (;;)
 		{	 
-		bool ss = false;
-		
-		unsigned long long j = 0ULL, dNum = 0ULL, trS = 0ULL ;
-		
-		trS = trS - 1;
-		
+		ss = false; 
+                j = 0ULL;
+                dNum = 0ULL;
+
 		do
 			{
 			cout << "\n\n\n*****************************************************\n* Enter a number between 3 and " << trS << " : ";
@@ -30,20 +33,21 @@ int main()
 				if (dNum % i == 0)
 					{
 					j = dNum / i ;
-				    cout << "\n\n************************\n" << i << " * " << j << "\n************************";
-				    ss = true;
-				    j = 0;
+				        cout << "\n\n************************\n" << i << " * " << j << "\n************************";
+				        ss = true;
+				        j = 0;
 					}	
-	            if ( (double)i > sqrt((double)dNum) )	
+	                        if ( (double)i > sqrt((double)dNum) )	
 					{
 					if (!ss)
 					cout << "\n\n****************\n* Prime Number * " << dNum << "\n****************";
-					j = 1;
+					
+                                        j = 1;
 					break;
 					}
 				}
 				
-	        if (j != 0 ) 
+	                if (j != 0 ) 
 				break;
 			}
 		}
