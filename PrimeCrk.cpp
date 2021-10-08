@@ -28,7 +28,7 @@ int main()
 		for (;;)
 			{
 			cout << "Computing ! ";	
-			for (unsigned long long i = 2LL; i < dNum; i++)
+			for (unsigned long long i = 2ULL; i < dNum; i++)
 				{
 				if (dNum % i == 0)
 					{
