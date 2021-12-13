@@ -11,7 +11,6 @@ int cmp = 7;
 int ucmp = 13;
 int mcc = 1;
 
-
 const int n = 262144;  // 1048576                     
 const int z = 23006;   //83500             
 
@@ -76,11 +75,11 @@ int main(int argc, char** argv)
 				
 			if (ucmp % 1024 == 0)
 				{
-					printFoo(); 
+				printFoo(); 
     				printFoobar();												
 				}
 				
-		    ++mcc;
+		         ++mcc;
 			}
 
 		if (ultra > n)
@@ -104,7 +103,7 @@ int main(int argc, char** argv)
 				}
 				else
 				{ 
-					if (j == z - 1)
+					if (j == nextMu)
 					{
 					  	bigCar[ultra] = '1';
 						cmp++;
@@ -194,7 +193,7 @@ void printFoobar()
 
 	int ccmp = ucmp / 1024;
 
-	cout << endl << endl;
+	cout << endl ;
 
 	for (int i = 0; i < 16; i++)
 		{
