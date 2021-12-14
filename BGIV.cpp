@@ -7,7 +7,6 @@ int ultra = 0;
 int master1 = 5;
 int master2 = 7;
 int master3 = 11;
-int cmp = 7;
 int ucmp = 13;
 int mcc = 1;
 
@@ -106,7 +105,6 @@ int main(int argc, char** argv)
 					if (j == nextMu)
 					{
 					  	bigCar[ultra] = '1';
-						cmp++;
 						tempUltraCp[o] = ultra;
 						++o;
 						master1 = master2;
@@ -146,8 +144,7 @@ void printFoo()
 	cout << "\n\n";
 
 	for (int i = ucmp - 1024 ; i <= ucmp; i++)
-	{
-				
+	{	
 		if (bigCar[i] == '0')
 		{
 			if (i % 16 == 0)
@@ -240,5 +237,3 @@ void printFoobar()
 
 	cout << endl << endl;
 }
-
-
