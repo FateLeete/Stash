@@ -10,8 +10,8 @@ int master3 = 11;
 int ucmp = 13;
 int mcc = 1;
 
-const int n = 262144;  // 1048576                     
-const int z = 23006;   //83500             
+const int n = 4194304 ; // 262144; 1048576 ;                 
+const int z = 295950 ;  //  23006;   83500 ;            
 
 char bigCar[n];
 
