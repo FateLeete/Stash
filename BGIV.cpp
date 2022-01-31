@@ -72,13 +72,10 @@ int main(int argc, char** argv)
 			{
 			ucmp = ucmp / 1024 * 1024;
 				
-			if (ucmp % 1024 == 0)
-				{
-				printFoo(); 
-    				printFoobar();												
-				}
+                        printFoo(); 
+    	                printFoobar();												
 				
-		         ++mcc;
+		        ++mcc;
 			}
 
 		if (ultra > n)
@@ -188,10 +185,7 @@ void printFoo()
 
 void printFoobar()
 {
-
-	int ccmp = ucmp / 1024;
-
-	cout << endl ;
+        cout << endl ;
 
 	for (int i = 0; i < 16; i++)
 		{
@@ -203,30 +197,30 @@ void printFoobar()
 				{
 					for (int k = 0; k < 16; k++)
 					{
-						cout << bigCar[k + (256 * j) + (i * 16) + (1024 * ccmp - 1024)];
+						cout << bigCar[k + (256 * j) + (i * 16) + (ucmp - 1024)];
 					}
 				}
 				if (j == 1)
 				{
 					for (int k = 0; k < 16; k++)
 					{
-						cout << bigCar[k + (256 * j) + (i * 16) + (1024 * ccmp - 1024)];
+						cout << bigCar[k + (256 * j) + (i * 16) + (ucmp - 1024)];
 					}
 				}
 				if (j == 2)
 				{
 					for (int k = 0; k < 16; k++)
 					{
-						cout << bigCar[k + (256 * j) + (i * 16) + (1024 * ccmp - 1024)];
+						cout << bigCar[k + (256 * j) + (i * 16) + (ucmp - 1024)];
 					}
 				}
 				if (j == 3)
 				{
 					for (int k = 0; k < 16; k++)
 					{
-						cout << bigCar[k + (256 * j) + (i * 16) + (1024 * ccmp - 1024)];
+						cout << bigCar[k + (256 * j) + (i * 16) + (ucmp - 1024)];
 						if (k == 15) 
-							cout << "  " << (1024 * ccmp - 1024) + (j * 256) + (i * 16) + k;
+							cout << "  " << (ucmp - 1024) + (j * 256) + (i * 16) + k;
 					}
 				}
 			}
