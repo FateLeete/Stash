@@ -99,7 +99,7 @@ int main(int argc, char** argv)
 				}
 				else
 				{ 
-					if (j == nextMu)
+					if (j == cpMu)
 					{
 					  	bigCar[ultra] = '1';
 						tempUltraCp[o] = ultra;
