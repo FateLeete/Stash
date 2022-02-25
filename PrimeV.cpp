@@ -7,7 +7,7 @@ using namespace std;
 int main()
 	{
 	unsigned long long dNum0 = 6ULL;
-	unsigned long long dN;
+	unsigned long long dN = 0ULL;
 	
 	cout << "Creating tab : ";
 	
