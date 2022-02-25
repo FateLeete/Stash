@@ -11,7 +11,7 @@ int main()
 	double cpu_time, cpu_time2, cpu_time3;	
 		
 	unsigned long long dNum0 = 6ULL;
-	unsigned long long dN;
+	unsigned long long dN = 0ULL;
 	
 	cout << "Creating tab : ";
 	
