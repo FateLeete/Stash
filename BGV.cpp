@@ -167,7 +167,7 @@ void printFoo()
 
 			if (stpcmp == 16)
 			{
-			stpcmp = 0;
+			        stpcmp = 0;
 			}
 
 			stpcmp++;
@@ -221,7 +221,6 @@ void printFoobar()
 
 		if (i != 15)
 			cout << endl;
-
 		}
 
 	cout << endl << endl;
