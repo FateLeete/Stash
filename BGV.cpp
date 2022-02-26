@@ -173,7 +173,7 @@ void printFoo()
 			stpcmp++;
 		}
 
-		cmpp++;
+        cmpp++;
 	}
 }
 
