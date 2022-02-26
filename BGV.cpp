@@ -93,7 +93,7 @@ int main(int argc, char** argv)
 					}
 			   	else
 			   	{ 
-				           	if (tabMuC[w+1] == 0)
+				        if (tabMuC[w+1] == 0)
 				           	{
 				             	  	bigCar[ultra] = '1';
 					               	tempUltraCp[o] = ultra;
@@ -101,7 +101,7 @@ int main(int argc, char** argv)
 				               		master1 = master2;
 		               				master2 = master3;
 				               		master3 = ultra;
-                                       break;
+                                                        break;
 			            		}
 	     			}
 			  }
@@ -111,12 +111,12 @@ int main(int argc, char** argv)
 			cpMu = nextMu;
 			tabMuC[gg] = cpMu;
 			nextMu = tempUltraCp[p];
-	        ++gg;
+	                ++gg;
 			++p;
 		}
 	}
 
-	return 0;
+return 0;
 }
 
 void ano(int i)
