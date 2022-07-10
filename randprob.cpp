@@ -36,7 +36,6 @@ for(;;)
         tbRandRes[i] = 0;
     }
     
-
     for (int i = 0 ; i < nbValue ; i++)
     {
         tempo = tbRand[i];
@@ -89,8 +88,6 @@ for(;;)
             }
         }    
     }
-    
-    cout << endl << "*************************************************************"; 
         
     for (int i = 0 ; i < 100 ; i++)
     {
@@ -103,19 +100,19 @@ for(;;)
                            
             cout << "#" << i << "\t" << tbRandRes[i] << "\tMoy:\t" << tbMoy[i] << "\t";
            
-            if (i == 49)
+            if (i == 61)
             {
                  cout << "-Occ : " << lessOcc;
             }
-            if (i == 51)
+            if (i == 63)
             {
                  cout <<"+Occ : " << plusOcc;
             }
-            if (i == 55)
+            if (i == 65)
             {
                  cout << "-Moy : " << lessMoy;
             }
-            if (i == 57)
+            if (i == 67)
             {
                  cout <<"+Moy : " << plusMoy;
             }   
@@ -129,18 +126,16 @@ for(;;)
                
             cout << "#" << i << "\t" << tbRandRes[i] << "\tMoy:\t nd \t";   
             
-            if (i == 49)
+            if (i == 61)
             {
                  cout << "-Occ : " << lessOcc;
             }
-            if (i == 51)
+            if (i == 63)
             {
                  cout <<"+Occ : " << plusOcc;
             }        
         }
     }
-    
-    cout << endl << "*************************************************************";
    
     firstLast = false;
     firstPrint = false;   
