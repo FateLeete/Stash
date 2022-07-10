@@ -17,7 +17,7 @@ int lessMoy = 1000;
 int plusMoy = 1000;
 
 
-int main ()
+int main()
 {
     
 for(;;)
