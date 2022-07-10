@@ -100,19 +100,19 @@ for(;;)
                            
             cout << "#" << i << "\t" << tbRandRes[i] << "\tMoy:\t" << tbMoy[i] << "\t";
            
-            if (i == 61)
+            if (i == 62)
             {
                  cout << "-Occ : " << lessOcc;
             }
-            if (i == 63)
+            if (i == 64)
             {
                  cout <<"+Occ : " << plusOcc;
             }
-            if (i == 65)
+            if (i == 66)
             {
                  cout << "-Moy : " << lessMoy;
             }
-            if (i == 67)
+            if (i == 68)
             {
                  cout <<"+Moy : " << plusMoy;
             }   
@@ -126,11 +126,11 @@ for(;;)
                
             cout << "#" << i << "\t" << tbRandRes[i] << "\tMoy:\t nd \t";   
             
-            if (i == 61)
+            if (i == 62)
             {
                  cout << "-Occ : " << lessOcc;
             }
-            if (i == 63)
+            if (i == 64)
             {
                  cout <<"+Occ : " << plusOcc;
             }        
