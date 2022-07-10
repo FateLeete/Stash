@@ -67,12 +67,12 @@ int main(int argc, char** argv)
 		
 		if (ucmp  >= mcc * 1024)
 			{
-			            ucmp = ucmp / 1024 * 1024;
+			ucmp = ucmp / 1024 * 1024;
 				
                         printFoo(); 
     	                printFoobar();												
 				
-		                ++mcc;
+		        ++mcc;
 			}
 
 		if (ultra > n)
@@ -101,7 +101,7 @@ int main(int argc, char** argv)
 				               		master1 = master2;
 		               				master2 = master3;
 				               		master3 = ultra;
-                                       break;
+                                                        break;
 			            		}
 	     			}
 			  }
@@ -111,7 +111,7 @@ int main(int argc, char** argv)
 			cpMu = nextMu;
 			tabMuC[gg] = cpMu;
 			nextMu = tempUltraCp[p];
-	        ++gg;
+	                ++gg;
 			++p;
 		}
 	}
