@@ -28,31 +28,33 @@ int main()
 		for (;;)
 			{
 			cout << "Computing ! ";	
+
 			for (unsigned long long i = 2ULL; i < dNum; i++)
 				{
 				if (dNum % i == 0)
 					{
 					j = dNum / i ;
 					
-				    cout << "\n\n************************\n" << i << " * " << j << "\n************************";
+				        cout << "\n\n************************\n" << i << " * " << j << "\n************************";
 				                 
-					 if (i == j -1) break;
+					if (i == j -1) break;
 						
-				     ss = true;
-				     j = 0;
+				        ss = true;
+				        j = 0;
 					}	
+
 	                        if ( (double)i > sqrt((double)dNum) )	
 					{
 					if (!ss)
-					cout << "\n\n****************\n Prime Number = " << dNum << "\n****************";
+					   cout << "\n\n****************\n Prime Number = " << dNum << "\n****************";
 					
-                     j = 1;
+                                        j = 1;
 					break;
 					}
 				}
 				
 	                if (j != 0 ) 
-				break;
+	                    break;
 			}
 		}
 	
