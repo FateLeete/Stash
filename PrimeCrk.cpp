@@ -33,16 +33,20 @@ int main()
 				if (dNum % i == 0)
 					{
 					j = dNum / i ;
-				        cout << "\n\n************************\n" << i << " * " << j << "\n************************";
-				        ss = true;
-				        j = 0;
+					
+				    cout << "\n\n************************\n" << i << " * " << j << "\n************************";
+				                 
+					 if (i == j -1) break;
+						
+				     ss = true;
+				     j = 0;
 					}	
 	                        if ( (double)i > sqrt((double)dNum) )	
 					{
 					if (!ss)
 					cout << "\n\n****************\n Prime Number = " << dNum << "\n****************";
 					
-                                        j = 1;
+                     j = 1;
 					break;
 					}
 				}
