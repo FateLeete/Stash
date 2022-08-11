@@ -62,7 +62,7 @@ int main(int argc, char** argv)
 	bigCar[9] = false;
 	bigCar[10] = false;
 	bigCar[11] = true;
-	bigCar[12] = false;            // Truly sorry, cant explain now but now ok .. :/
+	bigCar[12] = false;            
 
 	cout << "\n\n " << "1" << "  \t 1 \n";
 	cout << " " << "2" << "  \t 2 \n";
