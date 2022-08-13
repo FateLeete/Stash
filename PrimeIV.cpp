@@ -6,7 +6,7 @@ using namespace std;
 int main()
 	{
 	unsigned __int64 dNum = 18446744073709551000ULL;
-	unsigned __int64 dNum2 = 0;
+	unsigned __int64 dNum2 = 0ULL;
 	
 	for (;;)
 		{
