@@ -170,7 +170,7 @@ cpu_time2 = ((double) (end2 - start2)) / CLOCKS_PER_SEC;
 		}
    end3 = clock();
 cpu_time3 = ((double) (end3 - start3)) / CLOCKS_PER_SEC;
-	cout << "\n\n\n\nCOMPUTING FINISHED :) " << cpu_time3 << " *****\n** That is all ;) \n**************";
+	cout << "\n\n\n\nCOMPUTING FINISHED :) " << cpu_time3 << "*****\n\n** That is all ;) \n**************";
 	cin.get();
 	cin.get();
 	return 0;
