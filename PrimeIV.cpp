@@ -5,13 +5,13 @@ using namespace std;
 
 int main()
 	{
-	unsigned __int64 dNum = 18446744073709551000ULL;
-	unsigned __int64 dNum2 = 0ULL;
+	unsigned long long dNum = 18446744073709551000ULL;
+	unsigned long long dNum2 = 0ULL;
 	
 	for (;;)
 		{
 		cout << "Computing ! ";	
-		for (unsigned __int64 i = 2ULL; i < dNum; i++)
+		for (unsigned long long i = 2ULL; i < dNum; i++)
 			{
 			dNum2 = dNum % 10;
 			
