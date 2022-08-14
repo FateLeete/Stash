@@ -28,9 +28,9 @@ int main()
 	tabMu[1] = 3;
 	tabMu[2] = 5;
 		
-	//cout << "\nDone!";
+	cout << "\nDone!";
 
-	cout << "\n\nCalculating Prime table, Please wait !";
+	cout << "\n\nCalculating Prime table, Please wait !\n";
 	
 	unsigned long long c = 4ULL;
 	unsigned long long cc = 3ULL;
@@ -46,7 +46,6 @@ int main()
 			dN = dNum0 % 10;	
 			if (dN == 0 || dN == 2 || dN == 4 || dN == 5 || dN == 6 || dN == 8)
 				break;
-
 
 			if (dNum0 % i == 0)
 				{
@@ -76,7 +75,7 @@ int main()
 	end = clock();
 	cpu_time = ((double) (end - start)) / CLOCKS_PER_SEC;
 		cout << "\n\nAll Done !! " << cpu_time ;
-		cout << "\n\nREADY !!!!!\n\nPress ENTER!\n\n";
+		cout << "\n\nREADY !!!!!\n\nCOMPUTING! !\n\n";
 	//	cin.get();
 		
 		bool alert = false;
@@ -90,7 +89,6 @@ int main()
 			dN = dNum0 % 10;	
 			if (dN == 0 || dN == 2 || dN == 4 || dN == 5 || dN == 6 || dN == 8)
 				break;
-	
 				
 			if (dNum0 % tabMu[i] == 0)
 				{
@@ -124,7 +122,8 @@ int main()
 		}
    end2 = clock();
 cpu_time2 = ((double) (end2 - start2)) / CLOCKS_PER_SEC;
-	cout << "\n\n\n\n     " << cpu_time2 << "    ********************************************************\n";
+	cout << "\n\n\n\n" << cpu_time2 << "*****\n";
+        cout << "\nNOW GONNA COMPUTE FOR REALLY LONG TIME [till 1599999999th Prime Number] , PROBABLY GONNA CRASH.. :) \n\n" ;
 	
 	   alert = false;
 		
@@ -171,7 +170,7 @@ cpu_time2 = ((double) (end2 - start2)) / CLOCKS_PER_SEC;
 		}
    end3 = clock();
 cpu_time3 = ((double) (end3 - start3)) / CLOCKS_PER_SEC;
-	cout << "\n\n\n\n     " << cpu_time3 << "********************************************************\n* That is all ;) \n****************************";
+	cout << "\n\n\n\n" << cpu_time3 << "********************************************************\n** That is all ;) \n****************************";
 	cin.get();
 	cin.get();
 	return 0;
