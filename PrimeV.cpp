@@ -24,7 +24,7 @@ int main()
 	tabMu[1] = 3;
 	tabMu[2] = 5;
 		
-	//cout << "\nDone!";
+	cout << "\nDone!";
 
 	cout << "\n\nCalculating Prime table, Please wait !";
 	
@@ -79,7 +79,8 @@ int main()
 		}
 	
 		cout << "\n\nAll Done !!";
-		cout << "\n\nREADY !!!!!\n\nPress ENTER!\n\n";
+		cout << "\n\nREADY !!!!!\n\n";
+                cout << "Computing till the 15,999,999,900th Prime Number !!\n\n";
 	//	cin.get();
 		
 		bool alert = false;
@@ -97,8 +98,8 @@ int main()
 				{
 				break;
 				}	
-				
-            if ( (double)i > sqrt((double)dNum0) )	
+
+                        if ( (double)i > sqrt((double)dNum0) )	
 				{
 				tabMu[cc] = dNum0;
 								
@@ -123,7 +124,6 @@ int main()
 			
 		dNum0++;
 		}
-
 	
 	cout << "\n\n\n\n********************************************************\n* That is all ;) \n****************************";
 	cin.get();
