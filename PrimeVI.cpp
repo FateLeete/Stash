@@ -123,7 +123,7 @@ int main()
 		}
    end2 = clock();
 cpu_time2 = ((double) (end2 - start2)) / CLOCKS_PER_SEC;
-	cout << "\n\n\n\nAll Done !! " << cpu_time2 << " *****\n";
+	cout << "\n\n\n\nAll Done !! " << cpu_time2 << "*****\n";
 	cout << "\nLAST MILLI!! \n";
 	   alert = false;
 		
