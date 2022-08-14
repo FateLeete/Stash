@@ -74,8 +74,8 @@ int main()
 		}
 	end = clock();
 	cpu_time = ((double) (end - start)) / CLOCKS_PER_SEC;
-		cout << "\n\nAll Done !! " << cpu_time ;
-		cout << "\n\nREADY !!!!!\n\n Computing!\n";
+		cout << "\n\nAll Done !! " << cpu_time << "*****" ;;
+		cout << "\n\nREADY !!!!!\n\nComputing!\n";
 	//	cin.get();
 		
 		bool alert = false;
@@ -123,8 +123,8 @@ int main()
 		}
    end2 = clock();
 cpu_time2 = ((double) (end2 - start2)) / CLOCKS_PER_SEC;
-	cout << "\n\n\n\n     " << cpu_time2 << "    ********************************************************\n";
-	cout << " LAST MILLI!! \n";
+	cout << "\n\n\n\nAll Done !! " << cpu_time2 << " *****\n";
+	cout << "\nLAST MILLI!! \n";
 	   alert = false;
 		
 		start3 = clock();
@@ -170,7 +170,7 @@ cpu_time2 = ((double) (end2 - start2)) / CLOCKS_PER_SEC;
 		}
    end3 = clock();
 cpu_time3 = ((double) (end3 - start3)) / CLOCKS_PER_SEC;
-	cout << "\n\n\n\n     " << cpu_time3 << "********************************************************\n* That is all ;) \n****************************";
+	cout << "\n\n\n\nCOMPUTING FINISHED :) " << cpu_time3 << " *****\n** That is all ;) \n**************";
 	cin.get();
 	cin.get();
 	return 0;
