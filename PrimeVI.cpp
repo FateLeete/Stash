@@ -58,7 +58,7 @@ int main()
 			
 				if ( c == jjj)	
 					{
-					cout << "\n -*\t\t" << pp-- << "*- " << c << " --> " << "    : " << dNum0;
+					cout << "\n -*" << pp-- << "*- \t" << c << " --> " << "\t : " << dNum0;
 					jjj += 100000;				
 					}
 					
@@ -76,7 +76,7 @@ int main()
 	end = clock();
 	cpu_time = ((double) (end - start)) / CLOCKS_PER_SEC;
 		cout << "\n\nAll Done !! " << cpu_time ;
-		cout << "\n\nREADY !!!!!\n\n Computing!\n\n";
+		cout << "\n\nREADY !!!!!\n\n Computing!\n";
 	//	cin.get();
 		
 		bool alert = false;
@@ -103,7 +103,7 @@ int main()
 								
 				if ( c == jjj)	
 					{
-					cout << "\n -*\t\t" << pp++ << "*- " << c << " --> " << "    : " << dNum0;
+					cout << "\n -*" << pp++ << "*- \t" << c << " --> " << "\t : " << dNum0;
 					jjj += 100000;				
 					}
 				
@@ -125,7 +125,7 @@ int main()
    end2 = clock();
 cpu_time2 = ((double) (end2 - start2)) / CLOCKS_PER_SEC;
 	cout << "\n\n\n\n     " << cpu_time2 << "    ********************************************************\n";
-	
+	cout << " LAST MILLI!! \n";
 	   alert = false;
 		
 		start3 = clock();
@@ -150,7 +150,7 @@ cpu_time2 = ((double) (end2 - start2)) / CLOCKS_PER_SEC;
 								
 				if ( c == jjj)	
 					{
-					cout << "\n -*\t\t" << pp++ << "*- " << c << " --> " << "    : " << dNum0;
+					cout << "\n -*" << pp++ << "*- \t" << c << " --> " << "\t : " << dNum0;
 					jjj += 100000;				
 					}
 				
