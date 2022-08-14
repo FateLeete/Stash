@@ -28,9 +28,9 @@ int main()
 	tabMu[1] = 3;
 	tabMu[2] = 5;
 		
-	//cout << "\nDone!";
+	cout << "\nDone!";
 
-	cout << "\n\nCalculating Prime table, Please wait !";
+	cout << "\n\nCalculating Prime table, Please wait ! \n\n";
 	
 	unsigned long long c = 4ULL;
 	unsigned long long cc = 3ULL;
@@ -58,7 +58,7 @@ int main()
 			
 				if ( c == jjj)	
 					{
-					cout << "\n -*" << pp-- << "*- " << c << " --> " << "    : " << dNum0;
+					cout << "\n -*\t\t" << pp-- << "*- " << c << " --> " << "    : " << dNum0;
 					jjj += 100000;				
 					}
 					
@@ -76,7 +76,7 @@ int main()
 	end = clock();
 	cpu_time = ((double) (end - start)) / CLOCKS_PER_SEC;
 		cout << "\n\nAll Done !! " << cpu_time ;
-		cout << "\n\nREADY !!!!!\n\nPress ENTER!\n\n";
+		cout << "\n\nREADY !!!!!\n\n Computing!\n\n";
 	//	cin.get();
 		
 		bool alert = false;
@@ -103,7 +103,7 @@ int main()
 								
 				if ( c == jjj)	
 					{
-					cout << "\n -*" << pp++ << "*- " << c << " --> " << "    : " << dNum0;
+					cout << "\n -*\t\t" << pp++ << "*- " << c << " --> " << "    : " << dNum0;
 					jjj += 100000;				
 					}
 				
@@ -150,7 +150,7 @@ cpu_time2 = ((double) (end2 - start2)) / CLOCKS_PER_SEC;
 								
 				if ( c == jjj)	
 					{
-					cout << "\n -*" << pp++ << "*- " << c << " --> " << "    : " << dNum0;
+					cout << "\n -*\t\t" << pp++ << "*- " << c << " --> " << "    : " << dNum0;
 					jjj += 100000;				
 					}
 				
