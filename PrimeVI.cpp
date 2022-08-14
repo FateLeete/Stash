@@ -47,7 +47,6 @@ int main()
 			if (dN == 0 || dN == 2 || dN == 4 || dN == 5 || dN == 6 || dN == 8)
 				break;
 
-
 			if (dNum0 % i == 0)
 				{
 				break;
@@ -58,7 +57,7 @@ int main()
 			
 				if ( c == jjj)	
 					{
-					cout << "\n -*" << pp-- << "*- \t" << c << " --> " << "\t : " << dNum0;
+					cout << "\n -*" << pp-- << "*-  " << c << " --> " << "\t : " << dNum0;
 					jjj += 100000;				
 					}
 					
@@ -103,7 +102,7 @@ int main()
 								
 				if ( c == jjj)	
 					{
-					cout << "\n -*" << pp++ << "*- \t" << c << " --> " << "\t : " << dNum0;
+					cout << "\n -*" << pp++ << "*-  " << c << " --> " << "\t : " << dNum0;
 					jjj += 100000;				
 					}
 				
@@ -150,7 +149,7 @@ cpu_time2 = ((double) (end2 - start2)) / CLOCKS_PER_SEC;
 								
 				if ( c == jjj)	
 					{
-					cout << "\n -*" << pp++ << "*- \t" << c << " --> " << "\t : " << dNum0;
+					cout << "\n -*" << pp++ << "*-  " << c << " --> " << "\t : " << dNum0;
 					jjj += 100000;				
 					}
 				
