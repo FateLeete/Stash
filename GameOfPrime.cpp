@@ -132,7 +132,7 @@ int main()
 				if (aa == 0)
 					{
 					aa = 10;
-					bb = 19;
+					bb = 99;
 					break;	
 					}
 				
