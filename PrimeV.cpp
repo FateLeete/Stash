@@ -6,7 +6,7 @@ using namespace std;
 
 int main()
 	{
-	unsigned long long dNum0 = 6ULL;
+	unsigned long long dNum0 = 7ULL;
 	unsigned long long dN = 0ULL;
 	
 	cout << "Creating tab : ";
@@ -41,11 +41,6 @@ int main()
 		{
 		for (unsigned long i = 2UL; i < 1000000; i++)
 			{
-			dN = dNum0 % 10;	
-			if (dN == 0 || dN == 2 || dN == 4 || dN == 5 || dN == 6 || dN == 8)
-				break;
-
-
 			if (dNum0 % i == 0)
 				{
 				break;
@@ -72,7 +67,7 @@ int main()
 				}
 			}
 		
-		dNum0++;	
+		dNum0 = dNum0 + 2;	
 		
 		if (cc > 1000000)
 			break;
@@ -87,13 +82,8 @@ int main()
 		
 		for (;;)
 		{
-		for (unsigned long long i = 0ULL; i < dNum0; i++)
-			{
-			dN = dNum0 % 10;	
-			if (dN == 0 || dN == 2 || dN == 4 || dN == 5 || dN == 6 || dN == 8)
-				break;
-	
-				
+		for (unsigned long long i = 0ULL; i < 16000000000 ; i++)
+			{	
 			if (dNum0 % tabMu[i] == 0)
 				{
 				break;
@@ -122,7 +112,7 @@ int main()
 		if (alert)
 			break;
 			
-		dNum0++;
+		dNum0 = dNum0 + 2;
 		}
 	
 	cout << "\n\n\n\n********************************************************\n* That is all ;) \n****************************";
