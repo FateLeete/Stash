@@ -40,7 +40,7 @@ int main()
 	
 	for (;;)
 		{
-		for (unsigned long i = 2UL; i < 1000000; i++)
+		for (unsigned long long i = 2ULL; i < 16000000; i++)
 			{
 			if (dNum0 % i == 0)
 				{
