@@ -39,7 +39,7 @@ int main()
 	
 	for (;;)
 		{
-		for (unsigned long i = 2UL; i < 1000000; i++)
+		for (unsigned long long i = 2ULL; i < 4000000; i++)
 			{
 			if (dNum0 % i == 0)
 				{
@@ -69,7 +69,7 @@ int main()
 		
 		dNum0 = dNum0 + 2;	
 		
-		if (cc > 1000000)
+		if (cc == 1000000)
 			break;
 		}
 	
@@ -89,7 +89,7 @@ int main()
 				break;
 				}	
 
-                        if ( (double)i > sqrt((double)dNum0) )	
+                        if ( (double)tabMu[i] > sqrt((double)dNum0) )	
 				{
 				tabMu[cc] = dNum0;
 								

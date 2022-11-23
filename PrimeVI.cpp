@@ -1,4 +1,4 @@
-#include <iostream>                 // untested a lot..
+#include <iostream>
 #include <math.h>
 #include <stdlib.h>
 #include <time.h>
@@ -10,12 +10,11 @@ int main()
 	clock_t start, end, start2, end2, start3, end3;
 	double cpu_time, cpu_time2, cpu_time3;	
 		
-	unsigned long long dNum0 = 6ULL;
-	unsigned long long dN = 0ULL;
+	unsigned long long dNum0 = 7ULL;
 	
 	cout << "Creating tab : ";
 	
-	unsigned long long* tabMu =  (unsigned long long*) malloc (16000000000ULL);	
+	unsigned long long* tabMu =  (unsigned long long*) malloc (50000000ULL);	
 
 	if (tabMu == NULL) exit (1);	
 	
@@ -34,19 +33,15 @@ int main()
 	
 	unsigned long long c = 4ULL;
 	unsigned long long cc = 3ULL;
-	unsigned long long pp = 10ULL;
+	int pp = 10;
 	unsigned long long jjj = 100000ULL;
 	
 	start = clock();
 	
 	for (;;)
 		{
-		for (unsigned long i = 2UL; i < 1000000; i++)
+		for (unsigned long long i = 2ULL; i < 4000000; i++)
 			{
-			dN = dNum0 % 10;	
-			if (dN == 0 || dN == 2 || dN == 4 || dN == 5 || dN == 6 || dN == 8)
-				break;
-
 			if (dNum0 % i == 0)
 				{
 				break;
@@ -67,9 +62,9 @@ int main()
 				}
 			}
 		
-		dNum0++;	
+		dNum0 = dNum0 + 2;	
 		
-		if (cc > 1000000)
+		if (cc == 1000000)
 			break;
 		}
 	end = clock();
@@ -84,19 +79,14 @@ int main()
 		
 		for (;;)
 		{
-		for (unsigned long long i = 0ULL; i < dNum0; i++)
-			{
-			dN = dNum0 % 10;	
-			if (dN == 0 || dN == 2 || dN == 4 || dN == 5 || dN == 6 || dN == 8)
-				break;
-	
-				
+		for (unsigned long long i = 0ULL; i < 33000000; i++)
+			{				
 			if (dNum0 % tabMu[i] == 0)
 				{
 				break;
 				}	
 				
-            if ( (double)i > sqrt((double)dNum0) )	
+            if ( (double)tabMu[i] > sqrt((double)dNum0) )	
 				{
 				tabMu[cc] = dNum0;
 								
@@ -109,17 +99,18 @@ int main()
 				++c;
 				++cc;
 				
-				if (cc > 2000000 || dNum0 > 18000000000000000000 )
+				if (cc == 2000000 )
 					alert = true;
 				
 				break;
 				}
 			}
+			
+	    dNum0 = dNum0 + 2;
 		
 		if (alert)
 			break;
 			
-		dNum0++;
 		}
    end2 = clock();
 cpu_time2 = ((double) (end2 - start2)) / CLOCKS_PER_SEC;
@@ -131,19 +122,14 @@ cpu_time2 = ((double) (end2 - start2)) / CLOCKS_PER_SEC;
 		
 		for (;;)
 		{
-		for (unsigned long long i = 0ULL; i < dNum0; i++)
+		for (unsigned long long i = 0ULL; i < 50000000; i++)
 			{
-			dN = dNum0 % 10;	
-			if (dN == 0 || dN == 2 || dN == 4 || dN == 5 || dN == 6 || dN == 8)
-				break;
-	
-				
 			if (dNum0 % tabMu[i] == 0)
 				{
 				break;
 				}	
 				
-            if ( (double)i > sqrt((double)dNum0) )	
+            if ( (double)tabMu[i] > sqrt((double)dNum0) )	
 				{
 				tabMu[cc] = dNum0;
 								
@@ -156,7 +142,7 @@ cpu_time2 = ((double) (end2 - start2)) / CLOCKS_PER_SEC;
 				++c;
 				++cc;
 				
-				if (cc > 3000000 || dNum0 > 18000000000000000000 )
+				if (cc == 3000000)
 					alert = true;
 				
 				break;
@@ -166,7 +152,7 @@ cpu_time2 = ((double) (end2 - start2)) / CLOCKS_PER_SEC;
 		if (alert)
 			break;
 			
-		dNum0++;
+		dNum0 = dNum0 + 2;
 		}
    end3 = clock();
 cpu_time3 = ((double) (end3 - start3)) / CLOCKS_PER_SEC;
