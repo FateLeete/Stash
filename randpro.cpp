@@ -10,6 +10,9 @@ int tbRand[nbValue];
 int tbRandRes[100];
 int tbMoy[100];  //
 
+int tempo = 0;
+   
+int ct = 0;
 bool tbSqr[100];
 
 bool firstLast = true;
@@ -26,8 +29,10 @@ int main()
 for(;;)
 {   
     srand (time(NULL));
-    int tempo = 0;
-    int ct = 0;  
+    
+    if (tempo == 0)
+    	ct = 0;	
+
     for (int i = 0; i < nbValue ; i++)
     {
         tbRand[i] = rand() % 100;
@@ -43,20 +48,15 @@ for(;;)
     {
     	tempo = tbRand[i];
         tbRandRes[tempo] = tbRandRes[tempo] + 1;
-                
-		if (tbRandRes[tempo] == 1000) 
-			{
-			tbSqr[tempo] = true;  //
-			ct++;
-		
-			if (tbRandRes[tempo] > 1000)
-				{
-				tbSqr[tempo] = false;  //     
- 				ct--;
-				}
-			}
+        
+	if (tbRandRes[tempo] != 1000) 
+		tbSqr[tempo] = false;  //     
+	else
+		tbSqr[tempo] = true;  //     
     }
     
+    tempo = 0;
+	
     lessOcc = 1000;
     plusOcc = 1000; 
     
@@ -101,9 +101,15 @@ for(;;)
             {
                 plusMoy = tbMoy[i];
             }
-        }    
-	}
-        
+         }    
+      }
+	
+    for (int i = 0 ; i < 100 ; i++)
+    {
+	if (tbSqr[i] == true)
+		++ct;
+    }
+	
     for (int i = 0 ; i < 100 ; i++)
     {
         if (!firstPrint)
