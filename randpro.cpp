@@ -10,8 +10,6 @@ int tbRand[nbValue];
 int tbRandRes[100];
 int tbMoy[100];  //
 
-int ct = 0;
-
 bool tbSqr[100];
 
 bool firstLast = true;
@@ -28,8 +26,8 @@ int main()
 for(;;)
 {   
     srand (time(NULL));
-	int tempo = 0;
-	  
+    int tempo = 0;
+    int ct = 0;  
     for (int i = 0; i < nbValue ; i++)
     {
         tbRand[i] = rand() % 100;
@@ -40,8 +38,6 @@ for(;;)
         tbRandRes[i] = 0;
         tbSqr[i] = false;  //
     }
-
-	ct = 0;
 
     for (int i = 0; i < nbValue ; i++)
     {
@@ -59,7 +55,7 @@ for(;;)
  				ct--;
 				}
 			}
-	}
+    }
     
     lessOcc = 1000;
     plusOcc = 1000; 
@@ -135,10 +131,10 @@ for(;;)
             {
                  cout <<"+Moy : " << plusMoy;
             }
-			if (i == 73)
-			{
-				 cout << "=1000 : " << ct;
-			}   
+	    if (i == 73)
+	    {
+		 cout << "=1000 : " << ct << " OK ;) ";
+	    }   
         }
         else
         {
@@ -159,9 +155,9 @@ for(;;)
             }
 			if (i == 73)
 			{
-				 cout << "=1000 : " << ct;
-			}           
-        }
+				 cout << "=1000 : " << "Undefined, first print.. ";
+			}
+	 }
     }
 
     firstLast = false;
