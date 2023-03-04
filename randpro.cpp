@@ -1,4 +1,4 @@
-#include <iostream      // cout cin
+#include <iostream>     // cout cin
 #include <stdlib.h>     /* srand, rand */
 #include <time.h>       /* time */
 
