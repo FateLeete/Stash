@@ -32,7 +32,7 @@ for(;;)
     srand (time(NULL));
 
     ct = 0;
-	mt = 0;
+    mt = 0;
 	
     for (int i = 0; i < nbValue ; i++)
     {
@@ -71,13 +71,13 @@ for(;;)
               tbMoy[i] = tbRandRes[i];
 
               if (tbRandRes[i] < lessOcc)
-                 {
-                    lessOcc = tbRandRes[i];
-                 }
+              {
+              	  lessOcc = tbRandRes[i];
+              }
               if (tbRandRes[i] > plusOcc)
-                 {
-                    plusOcc = tbRandRes[i];
-                 }       
+              {
+                  plusOcc = tbRandRes[i];
+              }       
           }
     }
     else
@@ -108,14 +108,11 @@ for(;;)
     for (int i = 0 ; i < 100 ; i++)
     {
 		if (tbSqr[i] == true)
-		{
 			++ct;
-		}
-		if (tbMoy[i] == 1000)
-		{
+
+	        if (tbMoy[i] == 1000)
 			++mt;
-		}
-	}
+    }
 
     for (int i = 0 ; i < 100 ; i++)
     {
@@ -144,14 +141,14 @@ for(;;)
             {
                  cout << "+Moy     : " << plusMoy;
             }
-	    	if (i == 73)
-	    	{
-		 		 cout << "=1000    : " << ct;
-	    	}
-	    	if (i == 77)
-	    	{
-	    		 cout << "=Moy1000 : " << mt;
-			}
+	    if (i == 73)
+	    {
+		 cout << "=1000    : " << ct;
+	    }
+	    if (i == 77)
+	    {
+	    	cout << "=Moy1000 : " << mt;
+	    }
         }
         else
         {
@@ -170,15 +167,15 @@ for(;;)
             {
                  cout << "+Occ     : " << plusOcc;
             }
-			if (i == 73)
-			{
-				 cout << "=1000    : " << ct;
-			}
-			if (i == 77)
-			{
-				 cout << "=Moy1000 : Undefined, first print.. ";
-			}
+	    if (i == 73)
+	    {
+		 cout << "=1000    : " << ct;
 	    }
+	    if (i == 77)
+	    {
+		 cout << "=Moy1000 : Undefined, first print.. ";
+	    }
+	 }
     }
 
     firstLast = false;
