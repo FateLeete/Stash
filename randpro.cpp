@@ -8,10 +8,11 @@ const int nbValue = 100000;
 
 int tbRand[nbValue];
 int tbRandRes[100];
-int tbMoy[100];  //
+int tbMoy[100];
+int mt = 0;
 
 int tempo = 0;
-   
+
 int ct = 0;
 bool tbSqr[100];
 
@@ -25,14 +26,14 @@ int plusMoy = 1000;
 
 int main()
 {
-    
+   
 for(;;)
-{   
+{
     srand (time(NULL));
-    
-    if (tempo == 0)
-    	ct = 0;	
 
+    ct = 0;
+	mt = 0;
+	
     for (int i = 0; i < nbValue ; i++)
     {
         tbRand[i] = rand() % 100;
@@ -41,34 +42,34 @@ for(;;)
     for (int i = 0 ; i < 100; i++)
     {
         tbRandRes[i] = 0;
-        tbSqr[i] = false;  //
+        tbSqr[i] = false;
     }
 
     for (int i = 0; i < nbValue ; i++)
     {
     	tempo = tbRand[i];
         tbRandRes[tempo] = tbRandRes[tempo] + 1;
-        
-	if (tbRandRes[tempo] != 1000) 
-		tbSqr[tempo] = false;  //     
+
+	if (tbRandRes[tempo] != 1000)
+		tbSqr[tempo] = false;
 	else
-		tbSqr[tempo] = true;  //     
+		tbSqr[tempo] = true;
     }
-    
+
     tempo = 0;
-	
+
     lessOcc = 1000;
-    plusOcc = 1000; 
-    
+    plusOcc = 1000;
+
     lessMoy = 1000;
     plusMoy = 1000;
-        
+
     if (firstLast)
-    {              
+    {
           for (int i = 0 ; i < 100 ; i++)
-          {   
-              tbMoy[i] = tbRandRes[i];        
-              
+          {
+              tbMoy[i] = tbRandRes[i];
+
               if (tbRandRes[i] < lessOcc)
                  {
                     lessOcc = tbRandRes[i];
@@ -82,9 +83,9 @@ for(;;)
     else
     {
         for (int i = 0 ; i < 100 ; i++)
-        {   
+        {
             tbMoy[i] = ((tbRandRes[i] + tbMoy[i]) / 2);
-               
+
             if (tbRandRes[i] < lessOcc)
             {
                 lessOcc = tbRandRes[i];
@@ -101,15 +102,21 @@ for(;;)
             {
                 plusMoy = tbMoy[i];
             }
-         }    
-      }
-	
+        }
+    }
+
     for (int i = 0 ; i < 100 ; i++)
     {
-	if (tbSqr[i] == true)
-		++ct;
-    }
-	
+		if (tbSqr[i] == true)
+		{
+			++ct;
+		}
+		if (tbMoy[i] == 1000)
+		{
+			++mt;
+		}
+	}
+
     for (int i = 0 ; i < 100 ; i++)
     {
         if (!firstPrint)
@@ -118,29 +125,33 @@ for(;;)
             {
                  cout << endl;
             }
-                           
+
             cout << "#" << i << "\t" << tbRandRes[i] << "\tMoy:\t" << tbMoy[i] << "\t";
-           
+
             if (i == 63)
             {
-                 cout << "-Occ : " << lessOcc;
+                 cout << "-Occ     : " << lessOcc;
             }
             if (i == 65)
             {
-                 cout <<"+Occ : " << plusOcc;
+                 cout << "+Occ     : " << plusOcc;
             }
             if (i == 67)
             {
-                 cout << "-Moy : " << lessMoy;
+                 cout << "-Moy     : " << lessMoy;
             }
             if (i == 69)
             {
-                 cout <<"+Moy : " << plusMoy;
+                 cout << "+Moy     : " << plusMoy;
             }
-	    if (i == 73)
-	    {
-		 cout << "=1000 : " << ct << " OK ";
-	    }   
+	    	if (i == 73)
+	    	{
+		 		 cout << "=1000    : " << ct;
+	    	}
+	    	if (i == 77)
+	    	{
+	    		 cout << "=Moy1000 : " << mt;
+			}
         }
         else
         {
@@ -148,28 +159,32 @@ for(;;)
             {
                  cout << endl;
             }
-               
-            cout << "#" << i << "\t" << tbRandRes[i] << "\tMoy:\t nd \t";   
-            
+
+            cout << "#" << i << "\t" << tbRandRes[i] << "\tMoy:\t nd \t";
+
             if (i == 63)
             {
-                 cout << "-Occ : " << lessOcc;
+                 cout << "-Occ     : " << lessOcc;
             }
             if (i == 65)
             {
-                 cout <<"+Occ : " << plusOcc;
+                 cout << "+Occ     : " << plusOcc;
             }
 			if (i == 73)
 			{
-				 cout << "=1000 : " << "Undefined, first print.. ";
+				 cout << "=1000    : " << ct;
 			}
-	 }
+			if (i == 77)
+			{
+				 cout << "=Moy1000 : Undefined, first print.. ";
+			}
+	    }
     }
 
     firstLast = false;
-    firstPrint = false;   
-    
-    cin.get();    
+    firstPrint = false;
+
+    cin.get();
 }
 
 return 0;
