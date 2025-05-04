@@ -7,11 +7,11 @@ int ultra = 0;
 int master1 = 5;
 int master2 = 7;
 int master3 = 11;
-long long ucmp = 13;
+int ucmp = 13;
 int mcc = 1;
 
 const int n = 8388608 ; // 4194304 ; // 262144; //1048576 ;                 
-const int z = 490000 ; //295950 ;  //  23006;   //83500 ;            
+const int z = 564163 ; //295950 ;  //  23006;   //83500 ;            
 
 int bigCar[n];
 
