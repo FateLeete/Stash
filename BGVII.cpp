@@ -11,9 +11,9 @@ int ucmp = 13;
 int mcc = 1;
 
 const int n = 8388608 ; // 4194304 ; // 262144; //1048576 ;                 
-const int z = 564163 ; //295950 ;  //  23006;   //83500 ;            
+const int z = 564163 ; // 295950 ;  //  23006;   //83500 ;            
 
-int bigCar[n];
+char bigCar[n];
 
 int tabMuC[z];
 int tempUltraCp[z];
@@ -32,7 +32,7 @@ int main(int argc, char** argv)
 {
 	for (int j = 0; j < n; j++)
 	{
-		bigCar[j] =  0 ;
+		bigCar[j] = '0';
 	}
 
 	for (int j = 0; j < z; j++)
@@ -46,19 +46,19 @@ int main(int argc, char** argv)
 
 	tempUltraCp[0] = 11;
 
-	bigCar[0] =  1 ;
-	bigCar[1] =  1 ;
-	bigCar[2] =  1 ;
-	bigCar[3] =  1 ;
-	bigCar[4] =  0 ;
-	bigCar[5] =  1 ;
-	bigCar[6] =  0 ;
-	bigCar[7] =  1 ;
-	bigCar[8] =  0 ;
-	bigCar[9] =  0 ;
-	bigCar[10] =  0 ;
-	bigCar[11] =  1 ;
-	bigCar[12] =  0 ;
+	bigCar[0] = '1';
+	bigCar[1] = '1';
+	bigCar[2] = '1';
+	bigCar[3] = '1';
+	bigCar[4] = '0';
+	bigCar[5] = '1';
+	bigCar[6] = '0';
+	bigCar[7] = '1';
+	bigCar[8] = '0';
+	bigCar[9] = '0';
+	bigCar[10] = '0';
+	bigCar[11] = '1';
+	bigCar[12] = '0';
 
 	for (;;)
 	{
@@ -95,7 +95,7 @@ int main(int argc, char** argv)
 			   	{ 
 				        if (tabMuC[w+1] == 0)
 				           	{
-				             	  	bigCar[ultra] =  1 ;
+				             	  	bigCar[ultra] = '1';
 					               	tempUltraCp[o] = ultra;
 			               			++o;
 				               		master1 = master2;
@@ -123,7 +123,7 @@ void ano(int i)
 {
 	for (int j = 1; j <= 16; j++)
 	{
-		bigCar[i - j] =  3 ;
+		bigCar[i - j] = '>';
 	}
 }
 
@@ -135,7 +135,7 @@ void printFoo()
 
 	for (int i = ucmp - 1024 ; i <= ucmp; i++)
 	{	
-		if (bigCar[i] ==  0 )
+		if (bigCar[i] == '0')
 		{
 			if (i % 16 == 0)
 			{
