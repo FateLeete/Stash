@@ -7,7 +7,7 @@ int ultra = 0;
 int master1 = 5;
 int master2 = 7;
 int master3 = 11;
-int ucmp = 13;
+double ucmp = 13;
 int mcc = 1;
 
 const int n = 8388608 ; // 4194304 ; // 262144; //1048576 ;                 
