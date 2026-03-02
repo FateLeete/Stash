@@ -187,7 +187,7 @@ void ano(int i)
 {
 	for (int j = 0; j < 17; j++)
 	{
-		bar[i - j] = '>';
+		bar[i - j] = '#';
 	}
 }
 
