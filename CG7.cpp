@@ -123,7 +123,7 @@ void ano(int i)
 {
 	for (int j = 1; j <= 32; j++)
 	{
-		bigCar[i - j] = '>';
+		bigCar[i - j] = '#';
 	}
 }
 
